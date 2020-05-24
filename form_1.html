@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 1</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <form class="row">
+            <fieldset class="col-sm-12 col-lg-6 offset-lg-3 bg-light rounded-lg p-4 my-3 border">
+
+                <!--Título formulario-->
+                <div class="row">
+                    <div class="col-12">
+                        <legend class="text-center text-primary">Contactanos</legend>
+                    </div>
+                </div>
+
+                <!--Nombre-->
+                <div class="row">
+                    <div class="col-2">
+                        <img src="Images/1.png" class="img-fluid float-right">
+                    </div>
+                    <div class="form-group col-10">
+                        <input type="text" class="form-control" id="first_name" placeholder="Nombre" required>
+                    </div>
+                </div>
+
+                <!--Apellidos-->
+                <div class="row">
+                    <div class="col-2">
+                        <img src="Images/1.png" class="img-fluid float-right">
+                    </div>
+                    <div class="form-group col-10">
+                        <input type="text" class="form-control" id="last_name" placeholder="Apellidos" required>
+                    </div>
+                </div>
+
+                <!--email-->
+                <div class="row">
+                    <div class="col-2">
+                        <img src="Images/2.png" class="img-fluid float-right">
+                    </div>
+                    <div class="form-group col-10">
+                        <input type="email" class="form-control" id="email" placeholder="Dirección de email" required>
+                    </div>
+                </div>
+
+                <!--telefono-->
+                <div class="row">
+                    <div class="col-2">
+                        <img src="Images/3.png" class="img-fluid float-right">
+                    </div>
+                    <div class="form-group col-10">
+                        <input type="tel" class="form-control" id="phone" placeholder="Teléfono" required title="El formato solicitado consta de 10 números" pattern="[\d]{10}">
+                    </div>
+                </div>
+                
+                <!--textarea-->
+                <div class="row">
+                    <div class="col-2">
+                        <img src="Images/4.png" class="img-fluid float-right">
+                    </div>
+                    <div class="form-group col-10">
+                        <textarea class="form-control" id="first_name" placeholder="Ingrese su mensaje aquí. Nosotros nos colocaremos en contacto con usted dentro de 2 días habiles"style="height:10rem"></textarea>
+                    </div>
+                </div>
+
+                <!--enviar-->
+                <div class="row">
+                    <div class="col text-center">
+                        <input type="submit" class="btn-primary btn-rounded btn">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+<script type="text/javaScript" src="JS/jquery-3.2.1.min.js"></script>
+<script type="text/javaScript" src="JS/popper.min.js"></script>
+<script type="text/javaScript" src="JS/bootstrap.min.js"></script>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <form class="col-sm-12 col-lg-10 offset-lg-1 p-4">
+
+                <!--ingreso de datos-->
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="h3 font-weight-normal">Ingreso de registro</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 border border-dark p-3 rounded-lg bg-secondary">
+
+                            <fieldset class="col-12 border-dark border rounded bg-white">
+
+                                <!--datos de instructor-->
+                                <div class="row">
+                                    <div class="col-12 p-0">
+                                        <h2 class="bg-light p-2 h5 font-weight-light border">Datos de instructor</h2>
+                                    </div>
+                                </div>
+
+                                <!--formulario-->
+                                <div class="row">
+                                    <div class="col-6">
+
+                                        <!--run-->
+                                        <div class="row">
+                                            <div class="col-4 d-flex align-items-center justify-content-end">
+                                                <p class="font-weight-bold">RUN</p>
+                                            </div>
+                                            <div class="form-group col-8">
+                                                <input type="text" class="form-control" id="run" required>
+                                            </div>
+                                        </div>
+
+                                        <!--calendario-->
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <p class="font-weight-bold text-right">Fecha de nacimiento</p>
+                                            </div>
+                                            <div class="form-group col-8">
+                                                <input type="date" id="date" class="form-control" required>
+                                            </div>
+                                        </div>
+
+                                        <!--telefono-->
+                                        <div class="row">
+                                            <div class="col-4 d-flex align-items-center justify-content-end">
+                                                <p class="font-weight-bold">Teléfono</p>
+                                            </div>
+                                            <div class="form-group col-8">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">+57</span>
+                                                    </div>
+                                                    <input type="tel" class="form-control" id="phone" required title="El formato solicitado consta de 10 números" pattern="[\d]{10}">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--ciudad-->
+                                        <div class="row">
+                                            <div class="col-4 d-flex align-items-center justify-content-end">
+                                                <p class="font-weight-bold">Ciudad</p>
+                                            </div>
+                                            <div class="form-group col-8">
+                                                <select class="custom-select" id="ciudad">
+                                                    <option selected>Elige</option>
+                                                    <option value="1">Medellín</option>
+                                                    <option value="2">Itagüi</option>
+                                                    <option value="3">Sabaneta</option>
+                                                    <option value="4">Caldas</option>
+                                                    <option value="5">La estrella</option>
+                                                    <option value="6">Bello</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        
+                                        <!--Nombre-->
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <p class="font-weight-bold text-right">Nombre completo</p>
+                                            </div>
+                                            <div class="form-group col-8">
+                                                <input type="text" class="form-control" id="name" required>
+                                            </div>
+                                        </div>
+
+                                        <!--email-->
+                                        <div class="row">
+                                            <div class="col-4 d-flex align-items-center justify-content-end">
+                                                <p class="font-weight-bold">Email</p>
+                                            </div>
+                                            <div class="form-group col-8">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">@</span>
+                                                    </div>
+                                                    <input type="email" class="form-control" id="email" required>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--Dirección-->
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <p class="font-weight-bold text-right">Dirección</p>
+                                            </div>
+                                            <div class="form-group col-8">
+                                                <input type="text" class="form-control" id="direccion" required>
+                                            </div>
+                                        </div>
+
+                                        <!--Comuna-->
+                                        <div class="row">
+                                            <div class="col-4 d-flex align-items-center justify-content-end">
+                                                <p class="font-weight-bold">Comuna</p>
+                                            </div>
+                                            <div class="form-group col-8">
+                                                <select class="custom-select" id="comuna">
+                                                    <option selected>Elige</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--auto-->
+                                <div class="row">
+                                    <div class="col-2">
+                                        <p class="font-weight-bold text-right">Auto</p>
+                                    </div>
+                                    <div class="form-group col-10">
+                                        <input type="text" class="form-control" id="auto" required placeholder="XXXX-15">
+                                    </div>
+                                </div>
+                            </fieldset>
+                    </div>
+                </div>
+
+                <input type="submit" class="btn-secondary btn-rounded-lg btn m-2 float-right" value="Cancelar">
+                <input type="reset" class="btn-primary btn-rounded-lg btn m-2 float-right" value="Añadir">
+            </form>
+        </div>
+    </div>
+</body>
+<script type="text/javaScript" src="JS/jquery-3.2.1.min.js"></script>
+<script type="text/javaScript" src="JS/bootstrap.min.js"></script>
+<script type="text/javaScript" src="JS/popper.min.js"></script>
+</html>
